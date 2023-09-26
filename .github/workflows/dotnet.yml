@@ -15,11 +15,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 8.0.100-rc.1.23455.8
-    - name: publish
-      run: dotnet publish "./src/Leonardo.Web/Leonardo.Web.csproj" -c Release -r linux-musl-x64 /p:PublishAot=true /p:PublishTrimmed=true /p:PublishReadyToRun=true -o /publish
-
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.0.100-rc.1.23455.8
+      - run: dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=./coverage/opencover.xml
+      - run: dotnet publish ./src/Leonardo.Web/Leonardo.Web.csproj --self-contained true --output ./win-x64/fibonacci -c Release -r win-x64 /p:PublishSingleFile=true /p:PublishTrimmed=true /p:PublishReadyToRun=true
+      - name: Upload WebApp1 Build Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Publish win-x64 Fibonacci
+          path: ./win-x64/fibonacci
