@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession>
+  <Summary numSequencePoints="30" visitedSequencePoints="30" numBranchPoints="6" visitedBranchPoints="6" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="7" minCyclomaticComplexity="7" visitedClasses="3" numClasses="3" visitedMethods="3" numMethods="3" />
+  <Modules>
+    <Module hash="1581C738-CB58-417E-8D1A-630B47261450">
+      <ModulePath>Leonardo.dll</ModulePath>
+      <ModuleTime>2023-09-19T02:28:39</ModuleTime>
+      <ModuleName>Leonardo</ModuleName>
+      <Files>
+        <File uid="1" fullPath="C:\Users\ramya\Fibonacci\src\Leonardo\Fibonacci.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Leonardo.Fibonacci</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Int32 Leonardo.Fibonacci::Run(System.Int32)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1402852886" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1402852886" uspid="9" ordinal="1" sl="9" sc="1" el="9" ec="2" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="701426444" uspid="10" ordinal="2" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="701426442" uspid="11" ordinal="3" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1402852886" uspid="12" ordinal="4" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="701426444" uspid="9" ordinal="0" path="0" offset="10" offsetend="12" sl="9" fileid="1" />
+                <BranchPoint vc="701426442" uspid="9" ordinal="1" path="1" offset="10" offsetend="16" sl="9" fileid="1" />
+              </BranchPoints>
+              <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="8" ec="1" el="12" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Leonardo.Fibonacci/&lt;&gt;c__DisplayClass1_1</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Int32 Leonardo.Fibonacci/&lt;&gt;c__DisplayClass1_1::&lt;RunAsync&gt;b__0()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="23" ordinal="0" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="24" ordinal="1" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="25" ordinal="2" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="26" ordinal="3" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="4" uspid="27" ordinal="4" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="23" ec="1" el="27" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="20" visitedSequencePoints="20" numBranchPoints="4" visitedBranchPoints="4" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Leonardo.Fibonacci/&lt;RunAsync&gt;d__1</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="4" nPathComplexity="4" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="20" visitedSequencePoints="20" numBranchPoints="4" visitedBranchPoints="4" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Leonardo.Fibonacci/&lt;RunAsync&gt;d__1::MoveNext()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="15" ordinal="0" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="16" ordinal="1" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="17" ordinal="2" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="18" ordinal="3" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="19" ordinal="4" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="7" uspid="20" ordinal="5" sl="20" sc="1" el="20" ec="2" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="2" uspid="21" ordinal="6" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="22" ordinal="7" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="28" ordinal="8" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="29" ordinal="9" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="7" uspid="30" ordinal="10" sl="30" sc="1" el="30" ec="2" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="2" uspid="31" ordinal="11" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="32" ordinal="12" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="33" ordinal="13" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="34" ordinal="14" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="35" ordinal="15" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="36" ordinal="16" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="37" ordinal="17" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="39" ordinal="18" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="40" ordinal="19" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="2" uspid="20" ordinal="1" path="1" offset="251" offsetend="109" sl="20" fileid="1" />
+                <BranchPoint vc="1" uspid="20" ordinal="0" path="0" offset="251" offsetend="256" sl="20" fileid="1" />
+                <BranchPoint vc="2" uspid="30" ordinal="3" path="1" offset="521" offsetend="294" sl="30" fileid="1" />
+                <BranchPoint vc="1" uspid="30" ordinal="2" path="0" offset="521" offsetend="526" sl="30" fileid="1" />
+              </BranchPoints>
+              <MethodPoint vc="20" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="15" ec="1" el="40" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+  </Modules>
+</CoverageSession>
