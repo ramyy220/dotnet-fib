@@ -55,8 +55,8 @@ jobs:
       - name: Deploy container
         run: |
           # https://learn.microsoft.com/en-us/cli/azure/container?view=azure-cli-latest#az-container-create()
-          az group create --name mon-resource-group --location northeurope
-          az container create --resource-group mon-resource --name fibonacci-ramy --dns-name-label fibonacci-ramy --image docker.io/rams22/fibonacci:${{ needs.tags.outputs.new_version }} --ports 8080
+          az group create --name mon-resource --location northeurope
+          az container create --resource mon-resource --name fibonacci-ramy --dns-name-label fibonacci-ramy --image docker.io/rams22/fibonacci:${{ needs.tags.outputs.new_version }} --ports 8080
   build:
     needs: tags
     runs-on: ubuntu-latest
