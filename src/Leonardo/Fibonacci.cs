@@ -54,6 +54,7 @@ public class Fibonacci
                 FibOutput = result,
                 FibInput = int.Parse(args[tasks.IndexOf(task)]),
                 
+                
             });
             Console.WriteLine($"Result: {task.Result}");
             results.Add(task.Result);
