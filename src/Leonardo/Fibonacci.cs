@@ -5,16 +5,22 @@ namespace Leonardo;
 
 public class Fibonacci
 {
-    public static int Run(int i)
+    private readonly FibonacciDataContext _context;
+
+    public Fibonacci(FibonacciDataContext context)
+    {
+        _context = context;
+    }
+    public int Run(int i)
     {
         if (i <= 2)
             return 1;
         return Run(i - 1) + Run(i - 2);
     }
 
-    public static async Task<IList<int>> RunAsync(string[] args)
+    public async Task<IList<int>> RunAsync(string[] args)
     {
-        await using var context = new FibonacciDataContext();
+
         
         IList<int> results = new List<int>();
         Stopwatch stopwatch = new Stopwatch();
@@ -22,7 +28,7 @@ public class Fibonacci
         var tasks = new List<Task<int>>();
         foreach (var arg in args)
         {
-            var tfibonacci = await context.TFibonaccis
+            var tfibonacci = await _context.TFibonaccis
                 .Where(t => t.FibInput == int.Parse(arg))
                 .FirstOrDefaultAsync();
 
@@ -33,7 +39,7 @@ public class Fibonacci
 
                 var task = Task.Run(() =>
                 {
-                    var result = Fibonacci.Run(int.Parse(arg));
+                    var result = Run(int.Parse(arg));
                     Console.WriteLine($"Elapsed time: {stopwatch.ElapsedMilliseconds} ms {arg}");
                     return result;
                 });
@@ -49,7 +55,7 @@ public class Fibonacci
         {
             
             var result = await task;
-            context.TFibonaccis.Add(new TFibonacci()
+            _context.TFibonaccis.Add(new TFibonacci()
             {
                 FibOutput = result,
                 FibInput = int.Parse(args[tasks.IndexOf(task)]),
@@ -62,7 +68,7 @@ public class Fibonacci
         stopwatch.Stop();
         Console.WriteLine("Total elapsed time: {0} ms", stopwatch.ElapsedMilliseconds);
         
-        await context.SaveChangesAsync();
+        await _context.SaveChangesAsync();
 
         return results;
     }
